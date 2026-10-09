@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Сторінка 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" id="menuToggle">☰</button>
+
+  <nav class="sidebar" id="sidebar">
+    <a href="index.html">Головна</a>
+    <a href="page2.html">Друга сторiнка</a>
+  </nav>
+
+  <div class="toast" id="toast">
+    Ласкаво просимо, ви перейшли на наступну сторінку
+  </div>
+
+  <script>
+    const toast = document.getElementById('toast');
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 3000);
+
+    const toggle = document.getElementById('menuToggle');
+    const sidebar = document.getElementById('sidebar');
+    toggle.addEventListener('click', () => {
+      sidebar.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
+<video controls width="100%" style="max-width:800px; display:block; margin:40px auto; border-radius:12px;">
+  <source src="jin.MP4" type="video/MP4">
+</video>

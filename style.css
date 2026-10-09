@@ -25,11 +25,11 @@ h1 {
         padding: 14px 20px;
         font-size: 16px;
         color: gray;
-        background: #2563ed;
+        background: pink;
         cursor: pointer;
     }
     button:hover {
-        background: #1d4ed8;
+        background: papayawhip;
     }
     #splash-screen {
         position: fixed;
@@ -76,3 +76,100 @@ h1 {
         opacity: 0;
         visibility: hidden;
     }
+.toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-80%);
+    background: darkred;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 16px;
+    opacity: 0;
+    transition: transform .4s, opacity .4s;
+    z-index: 1000;
+}
+.toast.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+.menu-toogle {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 1001;
+    background: dimgray;
+    border: burlywood;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #16213e;
+    padding: 70px 20px 20px;
+    transition: left .3s;
+    z-index: 1000;
+}
+.sidebar.open {
+    left: 0;
+}
+.sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: lightblue;
+    padding: 12px 0;
+    font-size: 17px;
+    border-bottom: 1px solid peru;
+}
+.sidebar a:hover {
+    color: firebrick;
+}
+#helloButton {
+    padding: 14px 32px;
+    font-size: 18px;
+    background: #e94560;
+    color: gray;
+    border: dimgray;
+border-radius: 8px;
+cursor: pointer;
+margin-top: 20px;
+}
+#helloButton:hover {
+background: #c73560;
+}
+.menu-toggle {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 1001;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.toast {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-80px);
+  background: #e94560;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+  opacity: 0;
+  transition: transform .4s, opacity .4s;
+  z-index: 1000;
+}
+.toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
